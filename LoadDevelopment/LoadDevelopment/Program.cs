@@ -43,7 +43,7 @@ namespace LoadDevelopment
                     Console.WriteLine();
                 }
             }
-            int bestCharge = (FindSpread(shots)/2) + 1;
+            int bestCharge = FindSpread(shots);
             Console.WriteLine("Best spread was with charge: " + bestCharge);
 
         }
@@ -62,7 +62,7 @@ namespace LoadDevelopment
                     bestCharge = i;
                 }
             }
-            return bestCharge;
+            return (bestCharge / 2) + 1;
         }
 
         public static void SDev()
